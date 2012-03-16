@@ -45,3 +45,15 @@ $ rails generate rspec:install
 
 $ git add .
 $ git commit -a -m rspec:install
+
+$ vim spec/factories.rb
+...
+$ mkdir spec/support
+$ vim spec/support/devise.rb
+...
+$ vim spec/spec_helper.rb
+...
+$ bundle exec rake db:migrate
+$ bundle exec rake db:test:prepare
+
+
