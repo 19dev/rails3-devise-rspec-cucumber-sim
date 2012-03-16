@@ -82,4 +82,6 @@ IP adresi güncellendi.
 ...
 ## Devise
 
+rails generate devise:install
+
 
