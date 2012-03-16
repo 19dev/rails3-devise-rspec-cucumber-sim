@@ -34,4 +34,12 @@ Rails3DeviseRspecCucumber::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'http://192.168.140.214:3002' }
+  config.action_mailer.delivery_method = :smtp
+  # change to false to prevent email from being sent during development
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
 end

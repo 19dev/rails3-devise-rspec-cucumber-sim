@@ -56,4 +56,30 @@ $ vim spec/spec_helper.rb
 $ bundle exec rake db:migrate
 $ bundle exec rake db:test:prepare
 
+$ vim Gemfile
+..
+$ bundle
+
+$ rails generate cucumber:install --capybara --rspec
+$ rails generate email_spec:steps
+$ bundle exec cucumber features/visitors/request_invitation.feature --require features
+$ vim config/cucumber.yml
+std_opts = "-r features/support/ -r features/step_definitions --format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags ~@wip"
+$ cd features
+...
+
+$ vim config/environments/development.rb
+# ActionMailer Config
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.delivery_method = :smtp
+# change to false to prevent email from being sent during development
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.default :charset => "utf-8"
+
+IP adresi güncellendi.
+
+...
+## Devise
+
 

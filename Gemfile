@@ -13,14 +13,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "cucumber-rails", ">= 1.3.0", :group => :test
-gem "capybara", ">= 1.1.2", :group => :test
 gem "launchy", ">= 2.0.5", :group => :test
 gem "devise", ">= 2.1.0.rc"
 
 gem 'rspec-rails', :group => [:development, :test]
 group :test do
+  gem 'cucumber-rails'
+  gem 'capybara'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
   gem 'email_spec'
 end
