@@ -1,3 +1,24 @@
+# Size düşen nedir?
+
+Sırayla,
+
+  ~$ git clone git@github.com:seyyah/rails3-devise-rspec-cucumber-sim.git
+  ~$ cd rails3-devise-rspec-cucumber-sim/
+  ~$ bundle
+  ~$ rake db:migrate
+  ~$ rake db:seed
+  $ rails s --binding=192.168.140.214 --port=3005
+
+Yerelde demo için: http://192.168.140.214:3005
+
+Herokuda demo için: http://rails3-devise-rspec-cucumber.herokuapp.com/
+
+Örnek:
+  kullanıcı adı: "user@example.com"
+  parola: "secret"
+
+# Nasıl?
+
 Template,
 
 $ rails new rails3-devise-rspec-cucumber -m
