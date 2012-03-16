@@ -37,7 +37,11 @@ group :test do
 end
 
 $ bundle
+
+$ git add .
+$ git commit -a -m rspec:install
+
 $ rails generate rspec:install
 
-
-
+$ git add .
+$ git commit -a -m rspec:install
